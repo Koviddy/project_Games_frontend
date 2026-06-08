@@ -1,0 +1,34 @@
+.container_about {
+  display: flex;
+  padding: 24px;
+}
+
+.image_about {
+  flex: 2;
+  padding-left: 48px;
+}
+
+.image_about__profile {
+  height: 464px;
+  width: 464px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.text_about {
+  flex: 3;
+  padding-left: 24px;
+  padding-top: 106px;
+  font-weight: 400;
+}
+
+.text_about__name {
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.text_about__caption {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 24px;
+}

@@ -1,0 +1,46 @@
+.hero {
+  background-image: url("../../images/image_background_home.jpg");
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.container_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  color: #fff;
+}
+
+.text_main {
+  margin: 32px 0;
+}
+
+.text_subtitles {
+  margin-bottom: 64px;
+}
+
+.input_container {
+  background-color: #fff;
+  border-radius: 32px;
+  border: none;
+  overflow: hidden;
+}
+
+.input_text {
+  padding: 20px 24px;
+  width: 608px;
+  border: none;
+}
+
+.input_button {
+  padding: 20px 24px;
+  border-radius: 32px;
+  width: 168px;
+  background-color: #2f71e5;
+  border: 0;
+  color: #fff;
+  border: none;
+}
