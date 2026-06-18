@@ -2,7 +2,7 @@ import Logo from "../../images/icon_website.png";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 import Main from "../Main/Main";
-import About from "../About/About";
+import Games from "../Games/Games";
 
 function Header() {
   const customClassName = ({ isActive }) =>
@@ -17,8 +17,8 @@ function Header() {
         <NavLink to="/" className={customClassName}>
           Home
         </NavLink>
-        <NavLink to="/about" className={customClassName}>
-          About
+        <NavLink to="/games" className={customClassName}>
+          Games
         </NavLink>
       </nav>
     </header>

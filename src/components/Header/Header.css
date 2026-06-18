@@ -1,7 +1,6 @@
 .header {
-  height: 80px;
-  padding: 0px 30px;
-  max-width: 880px;
+  padding: 4px 30px;
+  max-width: 1440px;
   margin: 0 auto;
   border-bottom: 3px solid #c4c4c403;
   position: sticky;
@@ -24,20 +23,15 @@
   flex: 1;
   justify-content: space-between;
   align-items: center;
-}
-
-.icon_website {
-  width: 40px;
-  height: 40px;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
+  margin: auto;
   font-weight: 500;
   font-size: 30px;
   line-height: 24px;
+}
+
+.icon_website {
+  width: 60px;
+  height: 60px;
 }
 
 .menu__link {
@@ -45,10 +39,22 @@
   font-size: 24px;
   color: #fff;
   height: 100%;
+  justify-content: center;
 }
 
 .menu__link:hover {
   font-size: 24px;
   border-bottom: 2px solid #fff;
   color: #fff;
+}
+/* to do - apply correct hover lines on bottom of menu links  */
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0px 18px;
+  }
+
+  .menu {
+    gap: 24px;
+  }
 }

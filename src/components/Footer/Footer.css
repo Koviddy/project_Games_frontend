@@ -27,3 +27,9 @@
   height: 18px;
   width: 18px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+}

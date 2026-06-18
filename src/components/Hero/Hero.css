@@ -1,8 +1,9 @@
 .hero {
   background-image: url("../../images/image_background_home.jpg");
   height: 80vh;
-  width: 100%;
+  width: 100vw;
   background-size: cover;
+  background-position: center;
 }
 
 .container_text {
@@ -30,17 +31,38 @@
 }
 
 .input_text {
-  padding: 20px 24px;
-  width: 608px;
+  padding: 17px 24px;
+  max-width: 608px;
+  min-width: 250px;
   border: none;
 }
 
 .input_button {
-  padding: 20px 24px;
+  padding: 17px 24px;
   border-radius: 32px;
   width: 168px;
   background-color: #2f71e5;
   border: 0;
   color: #fff;
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 400px;
+    background-size: cover;
+  }
+
+  .container_text {
+    margin-top: 38px;
+  }
+
+  .input_text {
+    width: 292px;
+  }
+
+  .input_button {
+    padding: 17px 24px;
+    width: unset;
+  }
 }
