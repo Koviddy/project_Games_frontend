@@ -1,0 +1,21 @@
+.container_games {
+  background-color: #f5f6f7;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 62px 102px 38px 102px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container_games {
+    grid-template-columns: auto auto;
+    padding: 62px 48px 38px 48px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .container_games {
+    grid-template-columns: auto;
+    padding: 62px 48px 38px 48px;
+    place-items: center;
+  }
+}

@@ -1,0 +1,74 @@
+.hero {
+  background-image: url("../../images/image_background_home.jpg");
+  height: 80vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.container_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  color: #fff;
+}
+
+.text_main {
+  margin: 32px 0;
+}
+
+.text_subtitles {
+  margin-bottom: 64px;
+}
+
+.input_container {
+  background-color: #fff;
+  border-radius: 32px;
+  border: none;
+  overflow: hidden;
+}
+
+.input_text {
+  padding: 17px 24px;
+  max-width: 608px;
+  min-width: 250px;
+  border: none;
+}
+
+.input_button {
+  padding: 17px 24px;
+  border-radius: 32px;
+  width: 168px;
+  background-color: #2f71e5;
+  border: 0;
+  color: #fff;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .input_text {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 400px;
+    background-size: cover;
+  }
+
+  .container_text {
+    margin-top: 38px;
+  }
+
+  .input_text {
+    width: 292px;
+  }
+
+  .input_button {
+    padding: 17px 24px;
+    width: unset;
+  }
+}
