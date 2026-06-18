@@ -13,7 +13,7 @@ function GamesCard(props) {
       />
       <div className="container_card__info">
         <h2 className="card_title">{props.game.name}</h2>
-        <p className="card_text">Bad Romance</p>
+        <p className="card_text">Released:{props.game.released}</p>
       </div>
     </div>
   );

@@ -1,16 +1,49 @@
-# React + Vite
+Project: Games Frontend — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+What this is
 
-Currently, two official plugins are available:
+This is a small React frontend built with Vite. The app uses React 19 and `react-router-dom` for routing. It contains a set of presentational components in `src/components` that make up the UI (header, footer, games list, search form, etc.).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+How to run it (quick)
 
-## React Compiler
+1. Install dependencies:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+```
 
-## Expanding the ESLint configuration
+2. Start the development server:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run dev
+```
+
+3. Open the app in a browser at http://localhost:5173 (Vite's default).
+
+How to build and preview
+
+```bash
+npm run build
+npm run preview
+```
+
+Useful scripts
+
+- `npm run dev` — starts the dev server with HMR
+- `npm run build` — creates an optimized production build
+- `npm run preview` — serves the production build locally
+- `npm run lint` — runs ESLint over the project
+
+Main files and structure
+
+- `index.html` — HTML entry file
+- `vite.config.js` — Vite configuration (uses `@vitejs/plugin-react`)
+- `src/main.jsx` — app entry; mounts `App` and sets up `BrowserRouter`
+- `src/components/` — contains `App`, `Header`, `Footer`, `Games`, `GamesCard`, `Hero`, `Main`, `Navigation`, `Preloader`, `SearchForm`, etc.
+- `src/index.css` — global styles
+- `public/` — static files
+
+- This is an early frontend for a games listing app. The router is initialized in `src/main.jsx` and `App` manages the main routes and page layout.
+- I used the official Vite React plugin in `vite.config.js` to enable fast HMR during development.
+
+Thanks for reviewing my project — please let me know if you need anything else or if I should expand the README with more details.
