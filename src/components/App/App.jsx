@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Games from "../Games/Games";
 import { useState } from "react";

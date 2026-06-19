@@ -3,8 +3,6 @@ import Header from "../Header/Header";
 import "./Hero.css";
 
 function Hero(props) {
-  console.log(props);
-
   const navigate = useNavigate();
 
   const location = useLocation();
@@ -24,7 +22,6 @@ function Hero(props) {
             className="input_text"
             value={props.searchText}
             onChange={(event) => {
-              console.log(event);
               props.setSearchText(event.target.value);
             }}
           />

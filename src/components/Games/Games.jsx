@@ -12,7 +12,7 @@ function Games(props) {
 
   const searchGames = useCallback(() => {
     fetch(
-      `https://api.rawg.io/api/games?key=be6170bf363545d1acb07619d8efa379&search=${searchText}`,
+      `https://api.rawg.io/api/games?key=${import.meta.env.VITE_RAWG_API_KEY}&search=${searchText}`,
     )
       .then((res) => res.json())
       .then((res) => {

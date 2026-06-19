@@ -1,8 +1,6 @@
 import Logo from "../../images/icon_website.png";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-import Main from "../Main/Main";
-import Games from "../Games/Games";
 
 function Header() {
   const customClassName = ({ isActive }) =>

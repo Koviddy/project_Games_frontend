@@ -26,14 +26,18 @@
 .input_container {
   background-color: #fff;
   border-radius: 32px;
+  max-width: 908px;
+  width: 100%;
   border: none;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 
 .input_text {
   padding: 17px 24px;
   max-width: 608px;
-  min-width: 250px;
+  width: 100%;
   border: none;
 }
 
@@ -47,9 +51,20 @@
   border: none;
 }
 
-@media screen and (max-width: 600px) {
-  .input_text {
-    width: 200px;
+.input_button:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+@media screen and (max-width: 450px) {
+  .text_subtitles {
+    margin-bottom: 24px;
+    max-width: 240px;
+    width: 100%;
+  }
+  .text_main {
+    max-width: 240px;
+    width: 100%;
   }
 }
 
@@ -61,10 +76,6 @@
 
   .container_text {
     margin-top: 38px;
-  }
-
-  .input_text {
-    width: 292px;
   }
 
   .input_button {

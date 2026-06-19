@@ -20,6 +20,7 @@
   padding-left: 24px;
   padding-top: 106px;
   font-weight: 400;
+  max-width: 1200px;
 }
 
 .text_about__name {
@@ -31,6 +32,24 @@
   margin-top: 24px;
   font-size: 18px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .container_about {
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    padding: 24px 0px;
+    align-items: center;
+  }
+
+  .text_about {
+    padding: 0px auto;
+    align-items: center;
+  }
+  .image_about {
+    padding-left: 0px;
+  }
 }
 
 @media screen and (max-width: 768px) {

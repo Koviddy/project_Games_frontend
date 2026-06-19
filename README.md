@@ -27,6 +27,23 @@ npm run build
 npm run preview
 ```
 
+## API
+
+This project uses the [RAWG Video Games Database API](https://rawg.io/apidocs) to fetch game data.
+
+### How to get an API key
+
+1. Go to [https://rawg.io/apidocs](https://rawg.io/apidocs)
+2. Create a free account (or log in)
+3. Your API key will be available on the API page once logged in
+4. Copy the key and add it to your `.env` file
+
+## Environment Variables
+
+To run this project, create a `.env` file in the root directory and add the following variable:
+
+- `VITE_RAWG_API_KEY` — Your RAWG API key
+
 Useful scripts
 
 - `npm run dev` — starts the dev server with HMR

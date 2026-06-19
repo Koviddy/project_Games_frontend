@@ -1,6 +1,3 @@
-import Games from "../Games/Games";
-import App from "../App/App";
-import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 import ProfileImage from "../../images/profile_image.png";
 import "./Main.css";

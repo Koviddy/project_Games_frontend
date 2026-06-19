@@ -28,6 +28,18 @@
   width: 18px;
 }
 
+@media screen and (max-width: 317px) {
+  .footer {
+    padding: 0px;
+  }
+  .footer_nav {
+    flex-direction: column;
+  }
+  .footer_copyright {
+    width: 10px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     padding: 20px;

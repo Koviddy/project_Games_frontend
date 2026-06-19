@@ -7,7 +7,10 @@ function GamesCard(props) {
         {props.game.genres.map((genre) => genre.name).join("/")}
       </div>
       <img
-        src={props.game.background_image}
+        src={
+          props.game.background_image ||
+          "https://img.magnific.com/fotos-premium/uma-imagem-colorida-de-um-jogo-com-um-fundo-verde-e-azul_1031776-175285.jpg?semt=ais_hybrid&w=740&q=80"
+        }
         alt="card image"
         className="card_img"
       />
