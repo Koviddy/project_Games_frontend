@@ -9,10 +9,14 @@ function Footer() {
         © 2026, desenvolvido por Gustavo Ramos
       </div>
       <nav className="footer_nav">
-        <a href="/" target="_blank">
+        <a href="/" target="_blank" className="footer_nav__link">
           Home
         </a>
-        <a href="https://tripleten.com/" target="_blank">
+        <a
+          href="https://tripleten.com/"
+          target="_blank"
+          className="footer_nav__link"
+        >
           Tripleten
         </a>
         <a href="https://github.com/Koviddy" target="_blank">
