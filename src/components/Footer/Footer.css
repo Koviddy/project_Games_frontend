@@ -1,0 +1,64 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 106px 28px;
+}
+
+.footer_copyright {
+  color: #b6bcbf;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer_nav__link {
+  color: #b6bcbf;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer_nav__link:hover {
+  color: #2f71e5;
+}
+
+.facebook_logo {
+  height: 24px;
+  width: 24px;
+}
+
+.github_logo {
+  height: 18px;
+  width: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  .footer_nav {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
